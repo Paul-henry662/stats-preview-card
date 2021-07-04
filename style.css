@@ -6,7 +6,8 @@
   --darkBlue: hsl(244, 38%, 16%);
   --white: hsl(0, 0%, 100%);
   --gray: hsla(0, 0%, 100%, 0.75);
-  --violet: hsl(277, 64%, 61%);
+  --violet: hsl(277, 60%, 36%);
+  --transparentViolet: hsla(277, 42%, 40%, 0.781);
 }
 
 /*Getting rid of default parameters*/
@@ -21,9 +22,37 @@ section {
   width: 100vw;
   height: 100vh;
   background-color: var(--veryDarkBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section * {
   color: var(--gray);
   font: 400 15px Inter, sans-serif;
 }
 /*---/App container---*/
+
+/*---Card container---*/
+.card {
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--darkBlue);
+  border-radius: 10px;
+  overflow: hidden;
+}
+/*---/Card container---*/
+
+/*---Image header---*/
+.image-header {
+  min-height: 30vh;
+  background-image: url("./images/image-header-mobile.jpg");
+  background-size: cover;
+}
+/*---/Image header---*/
+
+/*---Text part---*/
+.text {
+  padding: 2rem 2rem;
+}
+/*---/Text part---*/
