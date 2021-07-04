@@ -1,0 +1,17 @@
+/*Stats preview card -> style.css*/
+
+/*Variables*/
+:root {
+  --veryDarkBlue: hsl(233, 47%, 7%);
+  --darkBlue: hsl(244, 38%, 16%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsla(0, 0%, 100%, 0.75);
+  --violet: hsl(277, 64%, 61%);
+}
+
+/*Getting rid of default parameters*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
