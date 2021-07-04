@@ -7,7 +7,6 @@
   --white: hsl(0, 0%, 100%);
   --gray: hsla(0, 0%, 100%, 0.6);
   --violet: hsl(277, 64%, 61%);
-  --transparentViolet: hsla(277, 42%, 40%, 0.781);
 }
 
 /*Getting rid of default parameters*/
@@ -46,7 +45,9 @@ section * {
 /*---Image header---*/
 .image-header {
   min-height: 30vh;
-  background-image: url("./images/image-header-mobile.jpg");
+  background: linear-gradient(var(--violet), var(--violet)),
+    url("./images/image-header-mobile.jpg") no-repeat;
+  background-blend-mode: multiply;
   background-size: cover;
 }
 /*---/Image header---*/
@@ -102,12 +103,14 @@ section * {
   .text {
     padding: 3rem 3rem;
     text-align: left;
-    flex-basis: 50%;
+    flex-basis: 45%;
     row-gap: 4vh;
   }
   .image-header {
     min-width: 30vw;
-    background-image: url("./images/image-header-desktop.jpg");
+    background: linear-gradient(var(--violet), var(--violet)),
+      url("./images/image-header-desktop.jpg") no-repeat;
+    background-size: cover;
     flex-basis: 50%;
   }
   .stats {
