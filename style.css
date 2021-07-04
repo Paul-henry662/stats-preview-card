@@ -34,11 +34,11 @@ section * {
 
 /*---Card container---*/
 .card {
-  flex-basis: 85%;
+  flex-basis: 87%;
   display: flex;
   flex-direction: column;
   background-color: var(--darkBlue);
-  border-radius: 10px;
+  border-radius: 0.3rem;
   overflow: hidden;
 }
 /*---/Card container---*/
@@ -77,9 +77,10 @@ section * {
   flex-direction: column;
   row-gap: 3vh;
   text-transform: uppercase;
+  padding-top: 2vh;
 }
 .stats h2 {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   letter-spacing: 0.2ch;
   display: flex;
   flex-direction: column;
@@ -90,3 +91,29 @@ section * {
   font-size: 1.3rem;
 }
 /*---/Text part---*/
+
+/*---Media queries---*/
+@media screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-basis: 60%;
+  }
+  .text {
+    padding: 3rem 3rem;
+    text-align: left;
+    flex-basis: 50%;
+    row-gap: 4vh;
+  }
+  .image-header {
+    min-width: 30vw;
+    background-image: url("./images/image-header-desktop.jpg");
+    flex-basis: 50%;
+  }
+  .stats {
+    flex-direction: row;
+    column-gap: 2vw;
+    padding-top: 5vh;
+  }
+}
+/*---/Media queries---*/
