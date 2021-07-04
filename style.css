@@ -15,3 +15,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*---App container---*/
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--veryDarkBlue);
+}
+section * {
+  color: var(--gray);
+  font: 400 15px Inter, sans-serif;
+}
+/*---/App container---*/
