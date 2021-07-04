@@ -40,4 +40,4 @@ I had a hard time managing every single flex container i defined. Maybe grid wou
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Paul-henry662)
+- Frontend Mentor - [@Paul-henry662](https://www.frontendmentor.io/profile/Paul-henry662)
